@@ -1,51 +1,30 @@
-#include <iostream>
-
+#include<iostream>
 using namespace std;
-
-
-
-int main(int argc, char *argv[])
-
-{
-
-int Arr[5], n;
-
-cin >>n;
-
-//	ÎåÎ»
-
-for (int i = 100; i < 1000; i++)
-
-{
-
-Arr[0] = i / 100;
-
-Arr[1] = (i / 10) % 10;
-
-Arr[2] = i % 10;
-
-if ((Arr[0] + Arr[1]) * 2 + Arr[2] == n)
-
-cout <<Arr[0] <<Arr[1] <<Arr[2] <<Arr[1] <<Arr[0] <<endl;
-
-}
-
-//	ÁùÎ»
-
-for (int i = 100; i < 1000; i++)
-
-{
-
-Arr[0] = i / 100;
-
-Arr[1] = (i / 10) % 10;
-
-Arr[2] = i % 10;
-
-if ((Arr[0] + Arr[1] + Arr[2]) * 2 == n)
-
-cout <<Arr[0] <<Arr[1] <<Arr[2] <<Arr[2] <<Arr[1] <<Arr[0] <<endl;
-
-}
-}
+int main(){
+	int a;
+	cin >> a;
+	for(int k1 = 1; k1 <= 9; k1++)
+	{
+		for(int k2 = 0; k2 <= 9; k2++)
+		{
+			for(int k3 = 0; k3 <= 9; k3++)
+			{
+				if(2 * (k1 + k2) + k3 == a)
+					cout << k1 << k2 << k3 << k2 << k1 <<endl;
+			}
+		}
+	}
+	for(int k1 = 1; k1 <= 9; k1++)
+	{
+		for(int k2 = 0; k2 <= 9; k2++)
+		{
+			for(int k3 = 0; k3 <= 9; k3++)
+			{
+				if(2 * (k1 + k2 + k3) == a)
+					cout << k1 << k2 << k3 << k3 << k2 << k1 <<endl;
+			}
+		}
+	}
+	return 0;
+} 
 
