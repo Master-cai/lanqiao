@@ -25,6 +25,7 @@ using namespace std;
 int main()
 {
 	int n;
+	int flag = 0;
 	cin >> n;
 	int a[1000];
 	for(int i = 0; i<n; i++)
@@ -38,8 +39,11 @@ int main()
 		if(a[i] == x)
 			{
 				cout << i+1;
+				flag = 1;
 				break; 
 			}
 	}
+	if(flag == 0)
+		cout << -1;
 	return 0;
 } 
