@@ -18,6 +18,6 @@ void f(string a, int k)
 
 int main()
 {
-	string a = "ABCDE";
+	string a = "QWERTYUIOPASDFGHJKLZXCVBNM";
 	f(a, 0);
 }
