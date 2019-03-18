@@ -44,7 +44,7 @@ void f()
 	srand(time(NULL));
 	int a[15];
 	//0代表花， 1代表店 
-	for(int i = 0; i<100*1000; i++)
+	for(int i = 0; i<1000*1000; i++)
 	{//记录花和店的数目 
 		int x = 0;
 		int y = 0;
